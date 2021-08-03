@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Form Validation</title>
+  <head>
+    <title>Form Validation</title>
     <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <!-- Header Start -->
+  </head>
+  <body>
+    <!-- Header Start -->
     <header>
       <div class="top">
         <h1>North South University</h1>
@@ -14,28 +14,67 @@
         <h3>Name: MD Masruf Jaman ID:1813625642</h3>
       </div>
     </header>
-  <!-- Header End -->
+    <!-- Header End -->
 
-  <!-- Form Start -->
-	<form action="register.html" method="POST">
+    <!-- Form Start -->
+    <form action="register.html" method="POST">
+      User name:<br />
+      <input id="username" type="text" placeholder="Username" /><br />
 
-        User name:<br />
-        <input id="username" type="text" placeholder="Username" /><br />
+      Password:<br />
+      <input id="password" type="password" placeholder="Password" /><br />
 
-        Password:<br />
-        <input id="password" type="password" placeholder="Password" /><br />
+      Email:<br />
+      <input id="email" type="text" placeholder="Email" /><br />
 
-        Email:<br />
-        <input id="email" type="text" placeholder="Email" /><br />
+      Contact No:<br />
+      <input id="contact" type="text" placeholder="text" /><br /><br />
 
-        Contact No:<br />
-        <input id="contact" type="text" placeholder="text" /><br /><br />
+      <button class="btn-1" onclick="return validateForm()" type="submit">
+        Submit
+      </button>
+      <a href="#"><button class="btn-2" type="reset">Cancel</button></a>
+    </form>
+    <!-- Form End -->
+    <button id="button">POP</button>
 
-        <button class="btn-1" onclick="return validateForm()" type="submit">Submit</button>
-        <a href="#"><button class="btn-2" type="reset">Cancel</button></a>
-  </form>
-  <!-- Form End -->
+    <!-- Showing Modal -->
+    <section>
+      <div class="container">
+        <h2>Your Notes</h2>
+        <hr />
+        <div id="notes" class="notes">
+          <div id="note">
+            <p class="note-counter">Note 1</p>
+            <h3 class="note-title">Hello World</h3>
+            <p class="note-text">Some note text</p>
+            <button class="edit-btn">Edit Note</button>
+            <button class="note-btn">Delete Note</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Showing Modal -->
 
-<script type="text/javascript" src="script.js"></script>
-</body>
+    <!-- Modal Section Start -->
+    <div class="bg-modal">
+      <div class="modal-content">
+        <div class="close">+</div>
+        <h1>My Notes</h1>
+        <form action="" method="">
+          <input type="text" id="note-title" placeholder="Note title" />
+          <textarea
+            name=""
+            id="note-text"
+            placeholder="Note details"
+          ></textarea>
+
+          <button id="add-btn">Add note</button>
+        </form>
+      </div>
+    </div>
+    <!-- Modal Section End -->
+
+    <script type="text/javascript" src="script.js"></script>
+  </body>
 </html>
