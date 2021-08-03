@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Validation</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header Start -->
+    <header>
+      <div class="top">
+        <h1>North South University</h1>
+        <h2>Registration Form</h2>
+        <h3>CSE-482 Sec:04 Lab</h3>
+        <h3>Name: MD Masruf Jaman ID:1813625642</h3>
+      </div>
+    </header>
+  <!-- Header End -->
+
+  <!-- Form Start -->
+	<form action="register.html" method="POST">
+
+        User name:<br />
+        <input id="username" type="text" placeholder="Username" /><br />
+
+        Password:<br />
+        <input id="password" type="password" placeholder="Password" /><br />
+
+        Email:<br />
+        <input id="email" type="text" placeholder="Email" /><br />
+
+        Contact No:<br />
+        <input id="contact" type="text" placeholder="text" /><br /><br />
+
+        <button class="btn-1" onclick="return validateForm()" type="submit">Submit</button>
+        <a href="#"><button class="btn-2" type="reset">Cancel</button></a>
+  </form>
+  <!-- Form End -->
+
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
